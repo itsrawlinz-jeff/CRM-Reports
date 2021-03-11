@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>CRM Data Source</DataSourceReference>
+      <CommandText>SELECT        tbl_assigntask.leadno, tbl_assigntask.leadname, tbl_assigntask.assigntask, tbl_assigntask.deadline, tbl_lead.leadno AS Expr1, tbl_lead.leadname AS Expr2, tbl_lead.infofrom, tbl_lead.address, tbl_lead.landmark, tbl_lead.city, 
+                         tbl_lead.contact, tbl_lead.business, tbl_lead.opportunity, tbl_lead.remarks
+FROM            tbl_assigntask INNER JOIN
+                         tbl_lead ON tbl_assigntask.leadno = tbl_lead.leadno</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="leadno">
+        <DataField>leadno</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="leadname">
+        <DataField>leadname</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="assigntask">
+        <DataField>assigntask</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="deadline">
+        <DataField>deadline</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="Expr1">
+        <DataField>Expr1</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="Expr2">
+        <DataField>Expr2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="infofrom">
+        <DataField>infofrom</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="address">
+        <DataField>address</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="landmark">
+        <DataField>landmark</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="city">
+        <DataField>city</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="contact">
+        <DataField>contact</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="business">
+        <DataField>business</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="opportunity">
+        <DataField>opportunity</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="remarks">
+        <DataField>remarks</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

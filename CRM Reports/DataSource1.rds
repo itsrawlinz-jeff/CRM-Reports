@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DataSource1">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=ITSRAWLINZ-JEFF\SQLEXPRESS;Initial Catalog=CRM</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>5a03a045-7fdb-4b4d-9a39-7ec2d8edb04f</DataSourceID>
+</RptDataSource>
