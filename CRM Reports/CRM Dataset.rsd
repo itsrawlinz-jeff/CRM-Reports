@@ -3,10 +3,9 @@
   <DataSet Name="DataSet1">
     <Query>
       <DataSourceReference>CRM Data Source</DataSourceReference>
-      <CommandText>SELECT        tbl_assigntask.leadno, tbl_assigntask.leadname, tbl_assigntask.assigntask, tbl_assigntask.deadline, tbl_lead.leadno AS Expr1, tbl_lead.leadname AS Expr2, tbl_lead.infofrom, tbl_lead.address, tbl_lead.landmark, tbl_lead.city, 
-                         tbl_lead.contact, tbl_lead.business, tbl_lead.opportunity, tbl_lead.remarks
-FROM            tbl_assigntask INNER JOIN
-                         tbl_lead ON tbl_assigntask.leadno = tbl_lead.leadno</CommandText>
+      <CommandText>SELECT        tbl_assigntask.*, tbl_lead.*
+FROM            tbl_lead INNER JOIN
+                         tbl_assigntask ON tbl_lead.leadno = tbl_assigntask.leadno</CommandText>
     </Query>
     <Fields>
       <Field Name="leadno">
